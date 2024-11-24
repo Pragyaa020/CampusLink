@@ -1,0 +1,248 @@
+/* styles/view.css
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  h2, h3 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .question {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .question h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .question p {
+    color: #555;
+  }
+  
+  .answers {
+    margin-top: 20px;
+  }
+  
+  .answer {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .answer p {
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .answer small {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .actions {
+    margin-top: 10px;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-btn {
+    background-color: #28a745;
+  }
+  
+  .edit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+   */
+
+  /* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #000;
+}
+
+.navbar .navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link.active {
+  color: #ffc107 !important;
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: white;
+}
+
+/* Main Content Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2, h3 {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+/* Question Section */
+.question {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.question h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.question p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Answers Section */
+.answers {
+  margin-top: 20px;
+}
+
+.answer {
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.answer p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.answer small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions .btn {
+  font-size: 0.875rem;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.actions .edit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.actions .delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.actions .btn:hover {
+  opacity: 0.8;
+}
+
+.actions form.inline {
+  display: inline;
+}
+
+/* Empty Answer Section */
+.answers p {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 0.875rem;
+  color: #555;
+  background-color: #f8f9fa;
+}

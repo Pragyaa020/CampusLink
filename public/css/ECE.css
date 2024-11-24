@@ -1,0 +1,306 @@
+/* header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #a4a4a4;
+    margin: 0;
+    max-width: 100%;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #a4a4a4;
+}
+
+
+header img {
+    height: 3.5rem;
+    max-width: 30%;
+    width: 15%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+.btn:hover {
+    color: black;
+}
+
+#signoutbutton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    height: 2.3rem;
+    width: 7.5rem;
+    font-size: 15px;
+    opacity: 0.3;
+    background-color: #333;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-image: url('/images/ECE_img/ECE.jpg');
+    background-size: cover;
+    background-position: initial;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-box {
+    height: 120px;
+    width: 120px;
+    border: 2px solid rgb(17, 6, 182);
+    margin-left: 30px;
+    margin-top: 30px;
+    background-size: cover;
+    background-image: url('/images/ECE_img/profile.jpg');
+}
+
+.main-box {
+    width: 1300px;
+    height: 1150px;
+    border: 4px solid rgb(5, 14, 141);
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+    border: none;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 85px;
+    margin-left: 250px;
+    color: blue;
+}
+
+
+.sub-box-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.sub-box-text {
+    height: 100px;
+    width: 1080px;
+    border: 2px solid rgb(6, 179, 182);
+    margin-left: 30px;
+    padding: 10px;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+
+#person1 {
+    background-size: cover;
+    background-image: url('/images/ECE_img/man.jpg');
+}
+
+#person2 {
+    background-size: cover;
+    background-image: url('/images/ECE_img/man2.jpg');
+}
+
+#person3 {
+    background-size: cover;
+    background-image: url('/images/ECE_img/man3.jpg');
+}
+
+#person4 {
+    background-size: cover;
+    background-image: url('/images/ECE_img/man4.jpg');
+}
+
+#person5 {
+    background-size: cover;
+    background-image: url('/images/ECE_img/man5.jpg');
+}
+
+#person6 {
+    background-size: cover;
+    background-image: url('/images/ECE_img/man6.jpg');
+} */
+
+General Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Section Titles */
+.intro h1 {
+    font-size: 2.5em;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.intro .subheading {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile Cards Section */
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+/* Profile Image */
+.profile-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Profile Details */
+.profile-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.profile-details h3 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.profile-details a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .profile-details h3 {
+        font-size: 1.2em;
+    }
+    
+    header .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* styles.css */
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}

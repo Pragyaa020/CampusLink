@@ -1,0 +1,337 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-BI</title>
+    <link rel="stylesheet" href="/css/IT-BI.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/images/IT_BI_img/logo.png" alt="CampusLink Logo">
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/profile/<%= userID %>">My Profile</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="/user/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2>INFORMATION TECHNOLOGY-BUSINESS INFORMATICS</h2>
+    <h2 class="second">Students of 2nd, 3rd, and 4th year</h2>
+
+    <div class="main-box">
+        <div class="sub-box-row">
+            <div class="sub-box" id="person1" style="background-image: url('/images/IT_BI_img/man.jpg');"></div>
+            <div class="sub-box-text">
+                NAME: John Doe;
+                <br>
+                YEAR: 2nd Year;
+                <br>
+                LINKEDIN: <a href="#">linkedin.com/in/johndoe</a>;
+                <br>
+                CONTACT DETAILS: john.doe@example.com;
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="sub-box-row">
+            <div class="sub-box" id="person2" style="background-image: url('/images/IT_BI_img/man2.jpg');"></div>
+            <div class="sub-box-text">
+                NAME: Jane Smith;
+                <br>
+                YEAR: 3rd Year;
+                <br>
+                LINKEDIN: <a href="#">linkedin.com/in/janesmith</a>;
+                <br>
+                CONTACT DETAILS: jane.smith@example.com;
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="sub-box-row">
+            <div class="sub-box" id="person3" style="background-image: url('/images/IT_BI_img/man3.jpg');"></div>
+            <div class="sub-box-text">
+                NAME: Alice Johnson;
+                <br>
+                YEAR: 4th Year;
+                <br>
+                LINKEDIN: <a href="#">linkedin.com/in/alicejohnson</a>;
+                <br>
+                CONTACT DETAILS: alice.johnson@example.com;
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="sub-box-row">
+            <div class="sub-box" id="person4" style="background-image: url('/images/IT_BI_img/man4.jpg');"></div>
+            <div class="sub-box-text">
+                NAME: Bob Brown;
+                <br>
+                YEAR: 2nd Year;
+                <br>
+                LINKEDIN: <a href="#">linkedin.com/in/bobbrown</a>;
+                <br>
+                CONTACT DETAILS: bob.brown@example.com;
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="sub-box-row">
+            <div class="sub-box" id="person5" style="background-image: url('/images/IT_BI_img/man5.jpg');"></div>
+            <div class="sub-box-text">
+                NAME: Emily Davis;
+                <br>
+                YEAR: 3rd Year;
+                <br>
+                LINKEDIN: <a href="#">linkedin.com/in/emilydavis</a>;
+                <br>
+                CONTACT DETAILS: emily.davis@example.com;
+                <br>
+            </div>
+        </div>
+        <hr>
+
+        <div class="sub-box-row">
+            <div class="sub-box" id="person6" style="background-image: url('/images/IT_BI_img/man6.jpg');"></div>
+            <div class="sub-box-text">
+                NAME: Michael Lee;
+                <br>
+                YEAR: 4th Year;
+                <br>
+                LINKEDIN: <a href="#">linkedin.com/in/michaellee</a>;
+                <br>
+                CONTACT DETAILS: michael.lee@example.com;
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-BI - Professional Profiles</title>
+    <link rel="stylesheet" href="/css/IT-BI.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="/images/homepage_img/CampusLink.png" alt="Logo" style="width: 100px; height: 40px; margin-right: 8px;">
+                <span style="font-size: 1.5rem; font-weight: bold; font-family: Arial, sans-serif;">CampusLink</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <% if (userID) { %>
+                        <li class="nav-item">
+                            <li><a href="/profile/<%= userID %>">Profile</a></li>
+                            <a class="nav-link" href="/profile/<%= userID %>">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/logout">Logout</a>
+                        </li>
+                    <% } else { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register">Register</a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h1>Information Technology - Business Informatics</h1>
+            <p class="intro-text">Meet our talented students from the 2nd, 3rd, and 4th years. Each brings a unique skill set and professional aspirations in the fields of technology and business informatics.</p>
+        </section>
+
+        <section class="profile-cards">
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/man.jpg');"></div>
+                <div class="profile-details">
+                    <h3>John Doe</h3>
+                    <p><strong>Year:</strong> 2nd Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/johndoe</a></p>
+                    <p><strong>Contact:</strong> john.doe@example.com</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/man2.jpg');"></div>
+                <div class="profile-details">
+                    <h3>Jane Smith</h3>
+                    <p><strong>Year:</strong> 3rd Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/janesmith</a></p>
+                    <p><strong>Contact:</strong> jane.smith@example.com</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/man2.jpg');"></div>
+                <div class="profile-details">
+                    <h3>johnny dep</h3>
+                    <p><strong>Year:</strong> 4th Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/janesmith</a></p>
+                    <p><strong>Contact:</strong> jane.smith@example.com</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/man2.jpg');"></div>
+                <div class="profile-details">
+                    <h3>anjeleena</h3>
+                    <p><strong>Year:</strong> 4th Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/janesmith</a></p>
+                    <p><strong>Contact:</strong> jane.smith@example.com</p>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-BI - Professional Profiles</title>
+    <link rel="stylesheet" href="/css/IT-BI.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <span style="font-size: 1.5rem; font-weight: bold; font-family: Arial, sans-serif;">CampusLink</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li> -->
+                    </ul>
+                    <ul class="navbar-nav">
+                        <% if (userID) { %>
+                            <li class="nav-item">
+                                <!-- <li><a href="/profile/<%= userID %>">Profile</a></li> -->
+                                <a class="nav-link" href="/profile/<%= userID %>">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user/logout">Logout</a>
+                            </li>
+                        <% } else { %>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="/register">Register</a>
+                            </li> -->
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="intro">
+            <h1>Information Technology - Business Informatics</h1>
+            <p class="intro-text">Meet our talented students from the 2nd, 3rd, and 4th years. Each brings a unique skill set and professional aspirations in the fields of technology and business informatics.</p>
+        </section>
+
+        <section class="profile-cards">
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/abhiram_gajula.jpg');"></div>
+                <div class="profile-details">
+                    <h3>Abhiram Gajula</h3>
+                    <p><strong>Year:</strong> 2nd Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gajula-abhiram-0a9a462b1/">Profile</a></p>
+                    <p><strong>Contact:</strong> 6300924059</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/ayush.jpg');"></div>
+                <div class="profile-details">
+                    <h3>Ayush kanjani</h3>
+                    <p><strong>Year:</strong> 2nd Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aayush-kanjani-105129280?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByMFVq4gsQSWPoqg6z1bYog%3D%3D">Profile</a></p>
+                    <p><strong>Contact:</strong> 8767235332</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/adarsh.jpg');"></div>
+                <div class="profile-details">
+                    <h3>Adarsh Nampally</h3>
+                    <p><strong>Year:</strong> 3rd Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adarsh-nampally-28a1292a5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGvvaehbITgursCIUD5kSlQ%3D%3D">Profile</a></p>
+                    <p><strong>Contact:</strong> 9959985743</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/manoj.jpg');"></div>
+                <div class="profile-details">
+                    <h3>Manoj Pallaki</h3>
+                    <p><strong>Year:</strong> 3rd Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manoj-pallakki-75b763259?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQ%2BVHgvIvQZSxFwC4z7G6GQ%3D%3D">profile</a></p>
+                    <p><strong>Contact:</strong> 9449634899</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <div class="profile-image" style="background-image: url('/images/IT_BI_img/AHMED RAFI.jpg');"></div>
+                <div class="profile-details">
+                    <h3>Ahmed Rafi</h3>
+                    <p><strong>Year:</strong> 4th Year</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmad--rafi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6iX4PP2RRYOFqMV7DtjLlA%3D%3D">profile</a></p>
+                    <p><strong>Contact:</strong> </p>
+                </div>
+            </div>
+           
+            
+
+            <!-- Repeat profile cards as needed -->
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
